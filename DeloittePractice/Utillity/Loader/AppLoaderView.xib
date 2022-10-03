@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="AppLoaderView" id="iN0-l3-epB" customClass="AppLoaderView" customModule="DeloittePractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGJ-3l-A7F">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNw-nX-bcU">
+                    <rect key="frame" x="145" y="291" width="85" height="85"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-mh-uhg">
+                            <rect key="frame" x="24" y="24" width="37" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="i0M-IX-7sm"/>
+                                <constraint firstAttribute="width" constant="37" id="osH-NB-KTr"/>
+                            </constraints>
+                            <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yTG-ge-AUq">
+                            <rect key="frame" x="2.5" y="0.0" width="80" height="75"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="SLi-k6-bjg"/>
+                                <constraint firstAttribute="width" constant="80" id="etb-ho-qtQ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="yTG-ge-AUq" firstAttribute="centerX" secondItem="cNw-nX-bcU" secondAttribute="centerX" id="3AT-aD-6x0"/>
+                        <constraint firstAttribute="height" constant="85" id="5Yd-9G-1o4"/>
+                        <constraint firstItem="rxh-mh-uhg" firstAttribute="centerX" secondItem="cNw-nX-bcU" secondAttribute="centerX" id="MH2-uB-Qgb"/>
+                        <constraint firstItem="rxh-mh-uhg" firstAttribute="centerY" secondItem="cNw-nX-bcU" secondAttribute="centerY" id="V5z-LI-iwl"/>
+                        <constraint firstAttribute="width" constant="85" id="rHU-PI-RCS"/>
+                        <constraint firstItem="yTG-ge-AUq" firstAttribute="centerY" secondItem="cNw-nX-bcU" secondAttribute="centerY" constant="-5" id="xBC-6g-3BF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GGJ-3l-A7F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6z8-ZT-HEG"/>
+                <constraint firstItem="cNw-nX-bcU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HEz-qt-LIj"/>
+                <constraint firstItem="cNw-nX-bcU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Owi-fs-pfD"/>
+                <constraint firstItem="GGJ-3l-A7F" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="c9b-q8-iaM"/>
+                <constraint firstItem="GGJ-3l-A7F" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="m4w-f7-fdj"/>
+                <constraint firstItem="GGJ-3l-A7F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qMc-F8-Fuu"/>
+            </constraints>
+            <connections>
+                <outlet property="loaderImageView" destination="yTG-ge-AUq" id="2Wa-OH-qys"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
