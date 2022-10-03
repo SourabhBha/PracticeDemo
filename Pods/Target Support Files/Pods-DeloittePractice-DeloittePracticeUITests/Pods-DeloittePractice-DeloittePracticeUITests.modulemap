@@ -1,0 +1,6 @@
+framework module Pods_DeloittePractice_DeloittePracticeUITests {
+  umbrella header "Pods-DeloittePractice-DeloittePracticeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

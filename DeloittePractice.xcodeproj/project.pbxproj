@@ -1,0 +1,1129 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A72CA9A31ABA57A3FF6ABEF /* Pods_DeloittePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FA3F9DB8C12D64A32C2306 /* Pods_DeloittePractice.framework */; };
+		8338F236FD048C4E37AC442D /* Pods_DeloittePracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6515C628060D016043950C8D /* Pods_DeloittePracticeTests.framework */; };
+		89C898D51EE596A8A75C04F6 /* Pods_DeloittePractice_DeloittePracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CB1126F0902E5218AB51F4 /* Pods_DeloittePractice_DeloittePracticeUITests.framework */; };
+		B4BE4D9D28D873D10098C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4D9C28D873D10098C7FB /* AppDelegate.swift */; };
+		B4BE4D9F28D873D10098C7FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4D9E28D873D10098C7FB /* SceneDelegate.swift */; };
+		B4BE4DA128D873D10098C7FB /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DA028D873D10098C7FB /* TasksListViewController.swift */; };
+		B4BE4DA428D873D10098C7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BE4DA228D873D10098C7FB /* Main.storyboard */; };
+		B4BE4DA628D873D20098C7FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BE4DA528D873D20098C7FB /* Assets.xcassets */; };
+		B4BE4DA928D873D20098C7FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4BE4DA728D873D20098C7FB /* LaunchScreen.storyboard */; };
+		B4BE4DB428D873D20098C7FB /* DeloittePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DB328D873D20098C7FB /* DeloittePracticeTests.swift */; };
+		B4BE4DBE28D873D20098C7FB /* DeloittePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DBD28D873D20098C7FB /* DeloittePracticeUITests.swift */; };
+		B4BE4DC028D873D20098C7FB /* DeloittePracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DBF28D873D20098C7FB /* DeloittePracticeUITestsLaunchTests.swift */; };
+		B4BE4DCE28D874E60098C7FB /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DCD28D874E60098C7FB /* Reachability.swift */; };
+		B4BE4DD128D8753A0098C7FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DD028D8753A0098C7FB /* Constants.swift */; };
+		B4BE4DD528D875860098C7FB /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DD328D875860098C7FB /* TaskTableViewCell.swift */; };
+		B4BE4DD628D875860098C7FB /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BE4DD428D875860098C7FB /* TaskTableViewCell.xib */; };
+		B4BE4DDD28D876A40098C7FB /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DDC28D876A40098C7FB /* TaskListViewModel.swift */; };
+		B4BE4DE328D878B00098C7FB /* TaskListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DE228D878B00098C7FB /* TaskListDataSource.swift */; };
+		B4BE4DE528D878BA0098C7FB /* TaskListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DE428D878BA0098C7FB /* TaskListDelegate.swift */; };
+		B4BE4DEE28D8B3440098C7FB /* FloatLabelTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DEC28D8B3440098C7FB /* FloatLabelTextView.swift */; };
+		B4BE4DEF28D8B3440098C7FB /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DED28D8B3440098C7FB /* FloatLabelTextField.swift */; };
+		B4BE4DF128D8B4940098C7FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DF028D8B4940098C7FB /* LoginViewController.swift */; };
+		B4BE4DF328D8B4A40098C7FB /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DF228D8B4A40098C7FB /* SignupViewController.swift */; };
+		B4BE4DF528D8B70C0098C7FB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DF428D8B70C0098C7FB /* LoginViewModel.swift */; };
+		B4BE4DF828D8B7A50098C7FB /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DF728D8B7A50098C7FB /* LoginRequest.swift */; };
+		B4BE4DFB28D8B9C90098C7FB /* LoginValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DFA28D8B9C90098C7FB /* LoginValidation.swift */; };
+		B4BE4DFD28D8B9E90098C7FB /* SignupValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DFC28D8B9E90098C7FB /* SignupValidation.swift */; };
+		B4BE4E0028D8BA680098C7FB /* ValidationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DFF28D8BA680098C7FB /* ValidationResponse.swift */; };
+		B4BE4E0328D8BAFD0098C7FB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4E0228D8BAFD0098C7FB /* String+Extension.swift */; };
+		B4BE4E0528D8BCC80098C7FB /* UIController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4E0428D8BCC80098C7FB /* UIController+Extension.swift */; };
+		B4BE4E0728D8C2F80098C7FB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4E0628D8C2F80098C7FB /* UIView+Extension.swift */; };
+		B4BE4E0B28D8DFFE0098C7FB /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4E0A28D8DFFE0098C7FB /* Dictionary+Extension.swift */; };
+		B4BE4E4F28D8FC9D0098C7FB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4E4E28D8FC9C0098C7FB /* NetworkManager.swift */; };
+		B4BE4E5328D8FF7C0098C7FB /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4E5228D8FF7B0098C7FB /* APIEndPoints.swift */; };
+		B4BE4E5528D900450098C7FB /* BaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4E5428D900450098C7FB /* BaseUrl.swift */; };
+		B4CB1E4328D9A5E200EA6564 /* UIWIndow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E4228D9A5E200EA6564 /* UIWIndow+Extension.swift */; };
+		B4CB1E4528D9B22500EA6564 /* TaskData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E4428D9B22500EA6564 /* TaskData.swift */; };
+		B4CB1E4828D9B8C800EA6564 /* SignupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E4728D9B8C800EA6564 /* SignupRequest.swift */; };
+		B4CB1E4B28D9BAAB00EA6564 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E4A28D9BAAB00EA6564 /* SignupViewModel.swift */; };
+		B4CB1E4D28D9C6AF00EA6564 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E4C28D9C6AE00EA6564 /* Utility.swift */; };
+		B4CB1E4F28D9C8B700EA6564 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E4E28D9C8B700EA6564 /* StoryboardName.swift */; };
+		B4CB1E5128D9CD4700EA6564 /* LoginTextfieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E5028D9CD4700EA6564 /* LoginTextfieldDelegate.swift */; };
+		B4CB1E5728D9E45700EA6564 /* LoginValidationUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E5628D9E45700EA6564 /* LoginValidationUnitTests.swift */; };
+		B4CB1E5A28D9E67200EA6564 /* SignupValidationUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E5928D9E67200EA6564 /* SignupValidationUnitTests.swift */; };
+		B4CB1E5C28D9EF7A00EA6564 /* LoginApiResourceTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E5B28D9EF7900EA6564 /* LoginApiResourceTestCases.swift */; };
+		B4CB1E5E28D9FDCC00EA6564 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E5D28D9FDCC00EA6564 /* UserData.swift */; };
+		B4CB1E6028DA3EB600EA6564 /* LoginViewModelTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E5F28DA3EB600EA6564 /* LoginViewModelTestCases.swift */; };
+		B4CB1E6328DA454000EA6564 /* TaskListViewModelTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E6228DA454000EA6564 /* TaskListViewModelTestCases.swift */; };
+		B4CB1E6728DAE52100EA6564 /* AppLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4CB1E6528DAE52100EA6564 /* AppLoaderView.xib */; };
+		B4CB1E6828DAE52100EA6564 /* AppLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E6628DAE52100EA6564 /* AppLoaderView.swift */; };
+		B4CB1E6A28DAFEC300EA6564 /* SignupViewModelTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CB1E6928DAFEC300EA6564 /* SignupViewModelTestCases.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4BE4DB028D873D20098C7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4BE4D9128D873D10098C7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4BE4D9828D873D10098C7FB;
+			remoteInfo = DeloittePractice;
+		};
+		B4BE4DBA28D873D20098C7FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4BE4D9128D873D10098C7FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4BE4D9828D873D10098C7FB;
+			remoteInfo = DeloittePractice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32F114AE324C961F4E2BAE9A /* Pods-DeloittePractice-DeloittePracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePractice-DeloittePracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-DeloittePractice-DeloittePracticeUITests/Pods-DeloittePractice-DeloittePracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6515C628060D016043950C8D /* Pods_DeloittePracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeloittePracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73A173340EE3D2B60C7AA244 /* Pods-DeloittePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePractice.debug.xcconfig"; path = "Target Support Files/Pods-DeloittePractice/Pods-DeloittePractice.debug.xcconfig"; sourceTree = "<group>"; };
+		86B4C0B29CEB9A50A4CF6596 /* Pods-DeloittePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePractice.release.xcconfig"; path = "Target Support Files/Pods-DeloittePractice/Pods-DeloittePractice.release.xcconfig"; sourceTree = "<group>"; };
+		87405BF00DBB066B09650A76 /* Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DeloittePractice-DeloittePracticeUITests/Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8FF5B04F76DE768838C0B515 /* Pods-DeloittePracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePracticeTests.release.xcconfig"; path = "Target Support Files/Pods-DeloittePracticeTests/Pods-DeloittePracticeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6CB1126F0902E5218AB51F4 /* Pods_DeloittePractice_DeloittePracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeloittePractice_DeloittePracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BE4D9928D873D10098C7FB /* DeloittePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeloittePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BE4D9C28D873D10098C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4BE4D9E28D873D10098C7FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4BE4DA028D873D10098C7FB /* TasksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListViewController.swift; sourceTree = "<group>"; };
+		B4BE4DA328D873D10098C7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4BE4DA528D873D20098C7FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4BE4DA828D873D20098C7FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4BE4DAA28D873D20098C7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4BE4DAF28D873D20098C7FB /* DeloittePracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeloittePracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BE4DB328D873D20098C7FB /* DeloittePracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloittePracticeTests.swift; sourceTree = "<group>"; };
+		B4BE4DB928D873D20098C7FB /* DeloittePracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeloittePracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BE4DBD28D873D20098C7FB /* DeloittePracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloittePracticeUITests.swift; sourceTree = "<group>"; };
+		B4BE4DBF28D873D20098C7FB /* DeloittePracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeloittePracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4BE4DCD28D874E60098C7FB /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B4BE4DD028D8753A0098C7FB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B4BE4DD328D875860098C7FB /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		B4BE4DD428D875860098C7FB /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		B4BE4DDC28D876A40098C7FB /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		B4BE4DE228D878B00098C7FB /* TaskListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDataSource.swift; sourceTree = "<group>"; };
+		B4BE4DE428D878BA0098C7FB /* TaskListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListDelegate.swift; sourceTree = "<group>"; };
+		B4BE4DEC28D8B3440098C7FB /* FloatLabelTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextView.swift; sourceTree = "<group>"; };
+		B4BE4DED28D8B3440098C7FB /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		B4BE4DF028D8B4940098C7FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B4BE4DF228D8B4A40098C7FB /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		B4BE4DF428D8B70C0098C7FB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B4BE4DF728D8B7A50098C7FB /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		B4BE4DFA28D8B9C90098C7FB /* LoginValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidation.swift; sourceTree = "<group>"; };
+		B4BE4DFC28D8B9E90098C7FB /* SignupValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidation.swift; sourceTree = "<group>"; };
+		B4BE4DFF28D8BA680098C7FB /* ValidationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationResponse.swift; sourceTree = "<group>"; };
+		B4BE4E0228D8BAFD0098C7FB /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B4BE4E0428D8BCC80098C7FB /* UIController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIController+Extension.swift"; sourceTree = "<group>"; };
+		B4BE4E0628D8C2F80098C7FB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		B4BE4E0A28D8DFFE0098C7FB /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		B4BE4E4E28D8FC9C0098C7FB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B4BE4E5228D8FF7B0098C7FB /* APIEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		B4BE4E5428D900450098C7FB /* BaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrl.swift; sourceTree = "<group>"; };
+		B4CB1E4228D9A5E200EA6564 /* UIWIndow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWIndow+Extension.swift"; sourceTree = "<group>"; };
+		B4CB1E4428D9B22500EA6564 /* TaskData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskData.swift; sourceTree = "<group>"; };
+		B4CB1E4728D9B8C800EA6564 /* SignupRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequest.swift; sourceTree = "<group>"; };
+		B4CB1E4A28D9BAAB00EA6564 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		B4CB1E4C28D9C6AE00EA6564 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B4CB1E4E28D9C8B700EA6564 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		B4CB1E5028D9CD4700EA6564 /* LoginTextfieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextfieldDelegate.swift; sourceTree = "<group>"; };
+		B4CB1E5628D9E45700EA6564 /* LoginValidationUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationUnitTests.swift; sourceTree = "<group>"; };
+		B4CB1E5928D9E67200EA6564 /* SignupValidationUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidationUnitTests.swift; sourceTree = "<group>"; };
+		B4CB1E5B28D9EF7900EA6564 /* LoginApiResourceTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApiResourceTestCases.swift; sourceTree = "<group>"; };
+		B4CB1E5D28D9FDCC00EA6564 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		B4CB1E5F28DA3EB600EA6564 /* LoginViewModelTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTestCases.swift; sourceTree = "<group>"; };
+		B4CB1E6228DA454000EA6564 /* TaskListViewModelTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModelTestCases.swift; sourceTree = "<group>"; };
+		B4CB1E6528DAE52100EA6564 /* AppLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppLoaderView.xib; sourceTree = "<group>"; };
+		B4CB1E6628DAE52100EA6564 /* AppLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLoaderView.swift; sourceTree = "<group>"; };
+		B4CB1E6928DAFEC300EA6564 /* SignupViewModelTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModelTestCases.swift; sourceTree = "<group>"; };
+		B7FA3F9DB8C12D64A32C2306 /* Pods_DeloittePractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeloittePractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0257238704990AA66B6EAFD /* Pods-DeloittePracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePracticeTests.debug.xcconfig"; path = "Target Support Files/Pods-DeloittePracticeTests/Pods-DeloittePracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4BE4D9628D873D10098C7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A72CA9A31ABA57A3FF6ABEF /* Pods_DeloittePractice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BE4DAC28D873D20098C7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8338F236FD048C4E37AC442D /* Pods_DeloittePracticeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BE4DB628D873D20098C7FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C898D51EE596A8A75C04F6 /* Pods_DeloittePractice_DeloittePracticeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0772F251AED5563BBDBCB31C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7FA3F9DB8C12D64A32C2306 /* Pods_DeloittePractice.framework */,
+				A6CB1126F0902E5218AB51F4 /* Pods_DeloittePractice_DeloittePracticeUITests.framework */,
+				6515C628060D016043950C8D /* Pods_DeloittePracticeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		33540A5315334384F49D4C4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73A173340EE3D2B60C7AA244 /* Pods-DeloittePractice.debug.xcconfig */,
+				86B4C0B29CEB9A50A4CF6596 /* Pods-DeloittePractice.release.xcconfig */,
+				87405BF00DBB066B09650A76 /* Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig */,
+				32F114AE324C961F4E2BAE9A /* Pods-DeloittePractice-DeloittePracticeUITests.release.xcconfig */,
+				C0257238704990AA66B6EAFD /* Pods-DeloittePracticeTests.debug.xcconfig */,
+				8FF5B04F76DE768838C0B515 /* Pods-DeloittePracticeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B4BE4D9028D873D10098C7FB = {
+			isa = PBXGroup;
+			children = (
+				B4BE4D9B28D873D10098C7FB /* DeloittePractice */,
+				B4BE4DB228D873D20098C7FB /* DeloittePracticeTests */,
+				B4BE4DBC28D873D20098C7FB /* DeloittePracticeUITests */,
+				B4BE4D9A28D873D10098C7FB /* Products */,
+				33540A5315334384F49D4C4B /* Pods */,
+				0772F251AED5563BBDBCB31C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B4BE4D9A28D873D10098C7FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4D9928D873D10098C7FB /* DeloittePractice.app */,
+				B4BE4DAF28D873D20098C7FB /* DeloittePracticeTests.xctest */,
+				B4BE4DB928D873D20098C7FB /* DeloittePracticeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4BE4D9B28D873D10098C7FB /* DeloittePractice */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4D9C28D873D10098C7FB /* AppDelegate.swift */,
+				B4BE4D9E28D873D10098C7FB /* SceneDelegate.swift */,
+				B4BE4DA528D873D20098C7FB /* Assets.xcassets */,
+				B4BE4DA728D873D20098C7FB /* LaunchScreen.storyboard */,
+				B4BE4DAA28D873D20098C7FB /* Info.plist */,
+				B4BE4DCF28D8752A0098C7FB /* Constants */,
+				B4BE4DD728D8761A0098C7FB /* Controllers */,
+				B4BE4E0128D8BAEE0098C7FB /* Extensions */,
+				B4BE4DD828D8765E0098C7FB /* Models */,
+				B4BE4E4D28D8FC7A0098C7FB /* Network Manager */,
+				B4BE4DE628D879FB0098C7FB /* Storyboards */,
+				B4BE4DD228D8755E0098C7FB /* UITableViewCells */,
+				B4BE4DCC28D874D00098C7FB /* Utillity */,
+				B4BE4DF928D8B9B00098C7FB /* Validation */,
+				B4BE4DDB28D876870098C7FB /* ViewModels */,
+			);
+			path = DeloittePractice;
+			sourceTree = "<group>";
+		};
+		B4BE4DB228D873D20098C7FB /* DeloittePracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E6128DA451200EA6564 /* TaskList */,
+				B4CB1E5828D9E64F00EA6564 /* Signup */,
+				B4CB1E5528D9E43D00EA6564 /* Login */,
+				B4BE4DB328D873D20098C7FB /* DeloittePracticeTests.swift */,
+			);
+			path = DeloittePracticeTests;
+			sourceTree = "<group>";
+		};
+		B4BE4DBC28D873D20098C7FB /* DeloittePracticeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DBD28D873D20098C7FB /* DeloittePracticeUITests.swift */,
+				B4BE4DBF28D873D20098C7FB /* DeloittePracticeUITestsLaunchTests.swift */,
+			);
+			path = DeloittePracticeUITests;
+			sourceTree = "<group>";
+		};
+		B4BE4DCC28D874D00098C7FB /* Utillity */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E6428DAE50700EA6564 /* Loader */,
+				B4BE4DEB28D8B3300098C7FB /* FloatLabelTextField */,
+				B4CB1E4C28D9C6AE00EA6564 /* Utility.swift */,
+			);
+			path = Utillity;
+			sourceTree = "<group>";
+		};
+		B4BE4DCF28D8752A0098C7FB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DD028D8753A0098C7FB /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B4BE4DD228D8755E0098C7FB /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DD328D875860098C7FB /* TaskTableViewCell.swift */,
+				B4BE4DD428D875860098C7FB /* TaskTableViewCell.xib */,
+			);
+			path = UITableViewCells;
+			sourceTree = "<group>";
+		};
+		B4BE4DD728D8761A0098C7FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DE928D8A1B90098C7FB /* Sign up */,
+				B4BE4DE828D8A1B10098C7FB /* Login */,
+				B4BE4DE728D8A1A40098C7FB /* User list */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B4BE4DD828D8765E0098C7FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E4628D9B8AD00EA6564 /* Request Models */,
+				B4BE4DF628D8B7850098C7FB /* Apimodels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4BE4DDB28D876870098C7FB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DDC28D876A40098C7FB /* TaskListViewModel.swift */,
+				B4BE4DF428D8B70C0098C7FB /* LoginViewModel.swift */,
+				B4CB1E4A28D9BAAB00EA6564 /* SignupViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B4BE4DE128D8788F0098C7FB /* UserListTableView */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DE228D878B00098C7FB /* TaskListDataSource.swift */,
+				B4BE4DE428D878BA0098C7FB /* TaskListDelegate.swift */,
+			);
+			path = UserListTableView;
+			sourceTree = "<group>";
+		};
+		B4BE4DE628D879FB0098C7FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DA228D873D10098C7FB /* Main.storyboard */,
+				B4CB1E4E28D9C8B700EA6564 /* StoryboardName.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B4BE4DE728D8A1A40098C7FB /* User list */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DE128D8788F0098C7FB /* UserListTableView */,
+				B4BE4DA028D873D10098C7FB /* TasksListViewController.swift */,
+			);
+			path = "User list";
+			sourceTree = "<group>";
+		};
+		B4BE4DE828D8A1B10098C7FB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DF028D8B4940098C7FB /* LoginViewController.swift */,
+				B4CB1E5028D9CD4700EA6564 /* LoginTextfieldDelegate.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B4BE4DE928D8A1B90098C7FB /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DF228D8B4A40098C7FB /* SignupViewController.swift */,
+			);
+			path = "Sign up";
+			sourceTree = "<group>";
+		};
+		B4BE4DEA28D8B3260098C7FB /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DCD28D874E60098C7FB /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		B4BE4DEB28D8B3300098C7FB /* FloatLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DED28D8B3440098C7FB /* FloatLabelTextField.swift */,
+				B4BE4DEC28D8B3440098C7FB /* FloatLabelTextView.swift */,
+			);
+			path = FloatLabelTextField;
+			sourceTree = "<group>";
+		};
+		B4BE4DF628D8B7850098C7FB /* Apimodels */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E5D28D9FDCC00EA6564 /* UserData.swift */,
+				B4CB1E4428D9B22500EA6564 /* TaskData.swift */,
+			);
+			path = Apimodels;
+			sourceTree = "<group>";
+		};
+		B4BE4DF928D8B9B00098C7FB /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DFE28D8BA450098C7FB /* Validation Response */,
+				B4BE4DFA28D8B9C90098C7FB /* LoginValidation.swift */,
+				B4BE4DFC28D8B9E90098C7FB /* SignupValidation.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		B4BE4DFE28D8BA450098C7FB /* Validation Response */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DFF28D8BA680098C7FB /* ValidationResponse.swift */,
+			);
+			path = "Validation Response";
+			sourceTree = "<group>";
+		};
+		B4BE4E0128D8BAEE0098C7FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4E0228D8BAFD0098C7FB /* String+Extension.swift */,
+				B4BE4E0428D8BCC80098C7FB /* UIController+Extension.swift */,
+				B4BE4E0628D8C2F80098C7FB /* UIView+Extension.swift */,
+				B4BE4E0A28D8DFFE0098C7FB /* Dictionary+Extension.swift */,
+				B4CB1E4228D9A5E200EA6564 /* UIWIndow+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4BE4E4D28D8FC7A0098C7FB /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DEA28D8B3260098C7FB /* Reachability */,
+				B4BE4E4E28D8FC9C0098C7FB /* NetworkManager.swift */,
+				B4BE4E5228D8FF7B0098C7FB /* APIEndPoints.swift */,
+				B4BE4E5428D900450098C7FB /* BaseUrl.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		B4CB1E4628D9B8AD00EA6564 /* Request Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4BE4DF728D8B7A50098C7FB /* LoginRequest.swift */,
+				B4CB1E4728D9B8C800EA6564 /* SignupRequest.swift */,
+			);
+			path = "Request Models";
+			sourceTree = "<group>";
+		};
+		B4CB1E5528D9E43D00EA6564 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E5628D9E45700EA6564 /* LoginValidationUnitTests.swift */,
+				B4CB1E5B28D9EF7900EA6564 /* LoginApiResourceTestCases.swift */,
+				B4CB1E5F28DA3EB600EA6564 /* LoginViewModelTestCases.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B4CB1E5828D9E64F00EA6564 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E5928D9E67200EA6564 /* SignupValidationUnitTests.swift */,
+				B4CB1E6928DAFEC300EA6564 /* SignupViewModelTestCases.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		B4CB1E6128DA451200EA6564 /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E6228DA454000EA6564 /* TaskListViewModelTestCases.swift */,
+			);
+			path = TaskList;
+			sourceTree = "<group>";
+		};
+		B4CB1E6428DAE50700EA6564 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				B4CB1E6628DAE52100EA6564 /* AppLoaderView.swift */,
+				B4CB1E6528DAE52100EA6564 /* AppLoaderView.xib */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4BE4D9828D873D10098C7FB /* DeloittePractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4BE4DC328D873D20098C7FB /* Build configuration list for PBXNativeTarget "DeloittePractice" */;
+			buildPhases = (
+				A9591F537B537E973A9DE46B /* [CP] Check Pods Manifest.lock */,
+				B4BE4D9528D873D10098C7FB /* Sources */,
+				B4BE4D9628D873D10098C7FB /* Frameworks */,
+				B4BE4D9728D873D10098C7FB /* Resources */,
+				7B15EA03BF95459061902716 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeloittePractice;
+			productName = DeloittePractice;
+			productReference = B4BE4D9928D873D10098C7FB /* DeloittePractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4BE4DAE28D873D20098C7FB /* DeloittePracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4BE4DC628D873D20098C7FB /* Build configuration list for PBXNativeTarget "DeloittePracticeTests" */;
+			buildPhases = (
+				49421E72A91C9D807BAC5F0A /* [CP] Check Pods Manifest.lock */,
+				B4BE4DAB28D873D20098C7FB /* Sources */,
+				B4BE4DAC28D873D20098C7FB /* Frameworks */,
+				B4BE4DAD28D873D20098C7FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4BE4DB128D873D20098C7FB /* PBXTargetDependency */,
+			);
+			name = DeloittePracticeTests;
+			productName = DeloittePracticeTests;
+			productReference = B4BE4DAF28D873D20098C7FB /* DeloittePracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4BE4DB828D873D20098C7FB /* DeloittePracticeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4BE4DC928D873D20098C7FB /* Build configuration list for PBXNativeTarget "DeloittePracticeUITests" */;
+			buildPhases = (
+				A600C4E99755AD260D2F73C0 /* [CP] Check Pods Manifest.lock */,
+				B4BE4DB528D873D20098C7FB /* Sources */,
+				B4BE4DB628D873D20098C7FB /* Frameworks */,
+				B4BE4DB728D873D20098C7FB /* Resources */,
+				13BF899495920B878D7421AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4BE4DBB28D873D20098C7FB /* PBXTargetDependency */,
+			);
+			name = DeloittePracticeUITests;
+			productName = DeloittePracticeUITests;
+			productReference = B4BE4DB928D873D20098C7FB /* DeloittePracticeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4BE4D9128D873D10098C7FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B4BE4D9828D873D10098C7FB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B4BE4DAE28D873D20098C7FB = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B4BE4D9828D873D10098C7FB;
+					};
+					B4BE4DB828D873D20098C7FB = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B4BE4D9828D873D10098C7FB;
+					};
+				};
+			};
+			buildConfigurationList = B4BE4D9428D873D10098C7FB /* Build configuration list for PBXProject "DeloittePractice" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4BE4D9028D873D10098C7FB;
+			packageReferences = (
+				B4CB1E3F28D9068500EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				B4CB1E5228D9D8B000EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+			);
+			productRefGroup = B4BE4D9A28D873D10098C7FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4BE4D9828D873D10098C7FB /* DeloittePractice */,
+				B4BE4DAE28D873D20098C7FB /* DeloittePracticeTests */,
+				B4BE4DB828D873D20098C7FB /* DeloittePracticeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4BE4D9728D873D10098C7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BE4DD628D875860098C7FB /* TaskTableViewCell.xib in Resources */,
+				B4CB1E6728DAE52100EA6564 /* AppLoaderView.xib in Resources */,
+				B4BE4DA928D873D20098C7FB /* LaunchScreen.storyboard in Resources */,
+				B4BE4DA628D873D20098C7FB /* Assets.xcassets in Resources */,
+				B4BE4DA428D873D10098C7FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BE4DAD28D873D20098C7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BE4DB728D873D20098C7FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13BF899495920B878D7421AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeloittePractice-DeloittePracticeUITests/Pods-DeloittePractice-DeloittePracticeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeloittePractice-DeloittePracticeUITests/Pods-DeloittePractice-DeloittePracticeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeloittePractice-DeloittePracticeUITests/Pods-DeloittePractice-DeloittePracticeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49421E72A91C9D807BAC5F0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeloittePracticeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B15EA03BF95459061902716 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeloittePractice/Pods-DeloittePractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeloittePractice/Pods-DeloittePractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeloittePractice/Pods-DeloittePractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A600C4E99755AD260D2F73C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeloittePractice-DeloittePracticeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9591F537B537E973A9DE46B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeloittePractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4BE4D9528D873D10098C7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CB1E5128D9CD4700EA6564 /* LoginTextfieldDelegate.swift in Sources */,
+				B4BE4DF128D8B4940098C7FB /* LoginViewController.swift in Sources */,
+				B4BE4DF828D8B7A50098C7FB /* LoginRequest.swift in Sources */,
+				B4BE4DD128D8753A0098C7FB /* Constants.swift in Sources */,
+				B4CB1E4528D9B22500EA6564 /* TaskData.swift in Sources */,
+				B4BE4E5328D8FF7C0098C7FB /* APIEndPoints.swift in Sources */,
+				B4BE4E0728D8C2F80098C7FB /* UIView+Extension.swift in Sources */,
+				B4BE4E0B28D8DFFE0098C7FB /* Dictionary+Extension.swift in Sources */,
+				B4BE4DFD28D8B9E90098C7FB /* SignupValidation.swift in Sources */,
+				B4BE4DDD28D876A40098C7FB /* TaskListViewModel.swift in Sources */,
+				B4BE4DFB28D8B9C90098C7FB /* LoginValidation.swift in Sources */,
+				B4BE4DA128D873D10098C7FB /* TasksListViewController.swift in Sources */,
+				B4BE4DF528D8B70C0098C7FB /* LoginViewModel.swift in Sources */,
+				B4BE4DE528D878BA0098C7FB /* TaskListDelegate.swift in Sources */,
+				B4CB1E4828D9B8C800EA6564 /* SignupRequest.swift in Sources */,
+				B4BE4E0328D8BAFD0098C7FB /* String+Extension.swift in Sources */,
+				B4CB1E4328D9A5E200EA6564 /* UIWIndow+Extension.swift in Sources */,
+				B4CB1E4F28D9C8B700EA6564 /* StoryboardName.swift in Sources */,
+				B4CB1E4D28D9C6AF00EA6564 /* Utility.swift in Sources */,
+				B4BE4E0028D8BA680098C7FB /* ValidationResponse.swift in Sources */,
+				B4BE4E5528D900450098C7FB /* BaseUrl.swift in Sources */,
+				B4BE4D9D28D873D10098C7FB /* AppDelegate.swift in Sources */,
+				B4BE4DCE28D874E60098C7FB /* Reachability.swift in Sources */,
+				B4BE4DEF28D8B3440098C7FB /* FloatLabelTextField.swift in Sources */,
+				B4BE4E4F28D8FC9D0098C7FB /* NetworkManager.swift in Sources */,
+				B4BE4DD528D875860098C7FB /* TaskTableViewCell.swift in Sources */,
+				B4CB1E4B28D9BAAB00EA6564 /* SignupViewModel.swift in Sources */,
+				B4BE4DEE28D8B3440098C7FB /* FloatLabelTextView.swift in Sources */,
+				B4BE4DF328D8B4A40098C7FB /* SignupViewController.swift in Sources */,
+				B4CB1E6828DAE52100EA6564 /* AppLoaderView.swift in Sources */,
+				B4CB1E5E28D9FDCC00EA6564 /* UserData.swift in Sources */,
+				B4BE4D9F28D873D10098C7FB /* SceneDelegate.swift in Sources */,
+				B4BE4DE328D878B00098C7FB /* TaskListDataSource.swift in Sources */,
+				B4BE4E0528D8BCC80098C7FB /* UIController+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BE4DAB28D873D20098C7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CB1E6028DA3EB600EA6564 /* LoginViewModelTestCases.swift in Sources */,
+				B4CB1E6A28DAFEC300EA6564 /* SignupViewModelTestCases.swift in Sources */,
+				B4CB1E5C28D9EF7A00EA6564 /* LoginApiResourceTestCases.swift in Sources */,
+				B4CB1E6328DA454000EA6564 /* TaskListViewModelTestCases.swift in Sources */,
+				B4CB1E5728D9E45700EA6564 /* LoginValidationUnitTests.swift in Sources */,
+				B4CB1E5A28D9E67200EA6564 /* SignupValidationUnitTests.swift in Sources */,
+				B4BE4DB428D873D20098C7FB /* DeloittePracticeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4BE4DB528D873D20098C7FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BE4DBE28D873D20098C7FB /* DeloittePracticeUITests.swift in Sources */,
+				B4BE4DC028D873D20098C7FB /* DeloittePracticeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4BE4DB128D873D20098C7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4BE4D9828D873D10098C7FB /* DeloittePractice */;
+			targetProxy = B4BE4DB028D873D20098C7FB /* PBXContainerItemProxy */;
+		};
+		B4BE4DBB28D873D20098C7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4BE4D9828D873D10098C7FB /* DeloittePractice */;
+			targetProxy = B4BE4DBA28D873D20098C7FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4BE4DA228D873D10098C7FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4BE4DA328D873D10098C7FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4BE4DA728D873D20098C7FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4BE4DA828D873D20098C7FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4BE4DC128D873D20098C7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4BE4DC228D873D20098C7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4BE4DC428D873D20098C7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73A173340EE3D2B60C7AA244 /* Pods-DeloittePractice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWN8WU32JB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeloittePractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sourabh.DeloittePractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B4BE4DC528D873D20098C7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B4C0B29CEB9A50A4CF6596 /* Pods-DeloittePractice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWN8WU32JB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DeloittePractice/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sourabh.DeloittePractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B4BE4DC728D873D20098C7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0257238704990AA66B6EAFD /* Pods-DeloittePracticeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWN8WU32JB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sourabh.DeloittePracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeloittePractice.app/DeloittePractice";
+			};
+			name = Debug;
+		};
+		B4BE4DC828D873D20098C7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FF5B04F76DE768838C0B515 /* Pods-DeloittePracticeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWN8WU32JB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sourabh.DeloittePracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeloittePractice.app/DeloittePractice";
+			};
+			name = Release;
+		};
+		B4BE4DCA28D873D20098C7FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87405BF00DBB066B09650A76 /* Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWN8WU32JB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sourabh.DeloittePracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeloittePractice;
+			};
+			name = Debug;
+		};
+		B4BE4DCB28D873D20098C7FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32F114AE324C961F4E2BAE9A /* Pods-DeloittePractice-DeloittePracticeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YWN8WU32JB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sourabh.DeloittePracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DeloittePractice;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4BE4D9428D873D10098C7FB /* Build configuration list for PBXProject "DeloittePractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BE4DC128D873D20098C7FB /* Debug */,
+				B4BE4DC228D873D20098C7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4BE4DC328D873D20098C7FB /* Build configuration list for PBXNativeTarget "DeloittePractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BE4DC428D873D20098C7FB /* Debug */,
+				B4BE4DC528D873D20098C7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4BE4DC628D873D20098C7FB /* Build configuration list for PBXNativeTarget "DeloittePracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BE4DC728D873D20098C7FB /* Debug */,
+				B4BE4DC828D873D20098C7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4BE4DC928D873D20098C7FB /* Build configuration list for PBXNativeTarget "DeloittePracticeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BE4DCA28D873D20098C7FB /* Debug */,
+				B4BE4DCB28D873D20098C7FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4CB1E3F28D9068500EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B4CB1E5228D9D8B000EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = B4BE4D9128D873D10098C7FB /* Project object */;
+}
