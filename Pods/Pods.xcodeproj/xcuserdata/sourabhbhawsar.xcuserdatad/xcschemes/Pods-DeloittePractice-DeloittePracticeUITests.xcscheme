@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "05159D8EC47DD33A3788C73466E3725C"
-               BuildableName = "Pods-DeloittePractice-DeloittePracticeUITests.framework"
+               BuildableName = "Pods_DeloittePractice_DeloittePracticeUITests.framework"
                BlueprintName = "Pods-DeloittePractice-DeloittePracticeUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
