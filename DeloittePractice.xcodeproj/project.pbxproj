@@ -10,6 +10,7 @@
 		1A72CA9A31ABA57A3FF6ABEF /* Pods_DeloittePractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FA3F9DB8C12D64A32C2306 /* Pods_DeloittePractice.framework */; };
 		8338F236FD048C4E37AC442D /* Pods_DeloittePracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6515C628060D016043950C8D /* Pods_DeloittePracticeTests.framework */; };
 		89C898D51EE596A8A75C04F6 /* Pods_DeloittePractice_DeloittePracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CB1126F0902E5218AB51F4 /* Pods_DeloittePractice_DeloittePracticeUITests.framework */; };
+		B4BD803628EAED0800B533D3 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BD803528EAED0800B533D3 /* Example.swift */; };
 		B4BE4D9D28D873D10098C7FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4D9C28D873D10098C7FB /* AppDelegate.swift */; };
 		B4BE4D9F28D873D10098C7FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4D9E28D873D10098C7FB /* SceneDelegate.swift */; };
 		B4BE4DA128D873D10098C7FB /* TasksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BE4DA028D873D10098C7FB /* TasksListViewController.swift */; };
@@ -85,6 +86,7 @@
 		87405BF00DBB066B09650A76 /* Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig"; path = "Target Support Files/Pods-DeloittePractice-DeloittePracticeUITests/Pods-DeloittePractice-DeloittePracticeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8FF5B04F76DE768838C0B515 /* Pods-DeloittePracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeloittePracticeTests.release.xcconfig"; path = "Target Support Files/Pods-DeloittePracticeTests/Pods-DeloittePracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6CB1126F0902E5218AB51F4 /* Pods_DeloittePractice_DeloittePracticeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeloittePractice_DeloittePracticeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BD803528EAED0800B533D3 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		B4BE4D9928D873D10098C7FB /* DeloittePractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeloittePractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BE4D9C28D873D10098C7FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4BE4D9E28D873D10098C7FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,7 +191,6 @@
 				C0257238704990AA66B6EAFD /* Pods-DeloittePracticeTests.debug.xcconfig */,
 				8FF5B04F76DE768838C0B515 /* Pods-DeloittePracticeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -233,6 +234,7 @@
 				B4BE4DCC28D874D00098C7FB /* Utillity */,
 				B4BE4DF928D8B9B00098C7FB /* Validation */,
 				B4BE4DDB28D876870098C7FB /* ViewModels */,
+				B4BD803528EAED0800B533D3 /* Example.swift */,
 			);
 			path = DeloittePractice;
 			sourceTree = "<group>";
@@ -563,8 +565,8 @@
 			);
 			mainGroup = B4BE4D9028D873D10098C7FB;
 			packageReferences = (
-				B4CB1E3F28D9068500EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
-				B4CB1E5228D9D8B000EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				B4CB1E3F28D9068500EA6564 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B4CB1E5228D9D8B000EA6564 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B4BE4D9A28D873D10098C7FB /* Products */;
 			projectDirPath = "";
@@ -743,6 +745,7 @@
 				B4CB1E4B28D9BAAB00EA6564 /* SignupViewModel.swift in Sources */,
 				B4BE4DEE28D8B3440098C7FB /* FloatLabelTextView.swift in Sources */,
 				B4BE4DF328D8B4A40098C7FB /* SignupViewController.swift in Sources */,
+				B4BD803628EAED0800B533D3 /* Example.swift in Sources */,
 				B4CB1E6828DAE52100EA6564 /* AppLoaderView.swift in Sources */,
 				B4CB1E5E28D9FDCC00EA6564 /* UserData.swift in Sources */,
 				B4BE4D9F28D873D10098C7FB /* SceneDelegate.swift in Sources */,
@@ -1107,7 +1110,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B4CB1E3F28D9068500EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		B4CB1E3F28D9068500EA6564 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -1115,7 +1118,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		B4CB1E5228D9D8B000EA6564 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		B4CB1E5228D9D8B000EA6564 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
