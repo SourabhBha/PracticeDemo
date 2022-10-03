@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+class Example{
+    var name: String = "Sourabh"
+}
